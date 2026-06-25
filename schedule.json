@@ -1,0 +1,701 @@
+{
+  "updated": "2026-06-26T02:10:08",
+  "team": "두산 베어스",
+  "games": [
+    {
+      "date": "2026-06-02",
+      "time": "18:30",
+      "home": true,
+      "opponent": "한화",
+      "opponent_code": "HH",
+      "opponent_color": "#FF6600",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HH.png",
+      "stadium": "잠실",
+      "score": {
+        "my": 5,
+        "opp": 3,
+        "result": "W"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-03",
+      "time": "17:00",
+      "home": true,
+      "opponent": "한화",
+      "opponent_code": "HH",
+      "opponent_color": "#FF6600",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HH.png",
+      "stadium": "잠실",
+      "score": {
+        "my": 3,
+        "opp": 3,
+        "result": "D"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-04",
+      "time": "18:30",
+      "home": true,
+      "opponent": "한화",
+      "opponent_code": "HH",
+      "opponent_color": "#FF6600",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HH.png",
+      "stadium": "잠실",
+      "score": {
+        "my": 3,
+        "opp": 1,
+        "result": "W"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-05",
+      "time": "18:30",
+      "home": true,
+      "opponent": "키움",
+      "opponent_code": "WO",
+      "opponent_color": "#570514",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_WO.png",
+      "stadium": "잠실",
+      "score": {
+        "my": 4,
+        "opp": 3,
+        "result": "W"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-06",
+      "time": "17:00",
+      "home": true,
+      "opponent": "키움",
+      "opponent_code": "WO",
+      "opponent_color": "#570514",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_WO.png",
+      "stadium": "잠실",
+      "score": {
+        "my": 9,
+        "opp": 1,
+        "result": "W"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-07",
+      "time": "17:00",
+      "home": true,
+      "opponent": "키움",
+      "opponent_code": "WO",
+      "opponent_color": "#570514",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_WO.png",
+      "stadium": "잠실",
+      "score": {
+        "my": 1,
+        "opp": 4,
+        "result": "L"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-09",
+      "time": "18:30",
+      "home": false,
+      "opponent": "롯데",
+      "opponent_code": "LT",
+      "opponent_color": "#041E42",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LT.png",
+      "stadium": "사직",
+      "score": {
+        "my": 6,
+        "opp": 5,
+        "result": "W"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-10",
+      "time": "18:30",
+      "home": false,
+      "opponent": "롯데",
+      "opponent_code": "LT",
+      "opponent_color": "#041E42",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LT.png",
+      "stadium": "사직",
+      "score": {
+        "my": 1,
+        "opp": 3,
+        "result": "L"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-11",
+      "time": "18:30",
+      "home": false,
+      "opponent": "롯데",
+      "opponent_code": "LT",
+      "opponent_color": "#041E42",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LT.png",
+      "stadium": "사직",
+      "score": {
+        "my": 12,
+        "opp": 7,
+        "result": "W"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-12",
+      "time": "18:30",
+      "home": false,
+      "opponent": "KIA",
+      "opponent_code": "HT",
+      "opponent_color": "#EA0029",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png",
+      "stadium": "광주",
+      "score": {
+        "my": 4,
+        "opp": 2,
+        "result": "W"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-13",
+      "time": "17:00",
+      "home": false,
+      "opponent": "KIA",
+      "opponent_code": "HT",
+      "opponent_color": "#EA0029",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png",
+      "stadium": "광주",
+      "score": {
+        "my": 1,
+        "opp": 2,
+        "result": "L"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-14",
+      "time": "17:00",
+      "home": false,
+      "opponent": "KIA",
+      "opponent_code": "HT",
+      "opponent_color": "#EA0029",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png",
+      "stadium": "광주",
+      "score": {
+        "my": 8,
+        "opp": 1,
+        "result": "W"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-16",
+      "time": "18:30",
+      "home": true,
+      "opponent": "KT",
+      "opponent_code": "KT",
+      "opponent_color": "#000000",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_KT.png",
+      "stadium": "잠실",
+      "score": {
+        "my": 2,
+        "opp": 6,
+        "result": "L"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-17",
+      "time": "18:30",
+      "home": true,
+      "opponent": "KT",
+      "opponent_code": "KT",
+      "opponent_color": "#000000",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_KT.png",
+      "stadium": "잠실",
+      "score": {
+        "my": 1,
+        "opp": 8,
+        "result": "L"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-18",
+      "time": "18:30",
+      "home": true,
+      "opponent": "KT",
+      "opponent_code": "KT",
+      "opponent_color": "#000000",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_KT.png",
+      "stadium": "잠실",
+      "score": {
+        "my": 2,
+        "opp": 1,
+        "result": "W"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-19",
+      "time": "18:30",
+      "home": true,
+      "opponent": "LG",
+      "opponent_code": "LG",
+      "opponent_color": "#C30452",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LG.png",
+      "stadium": "잠실",
+      "score": {
+        "my": 2,
+        "opp": 3,
+        "result": "L"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-20",
+      "time": "17:00",
+      "home": true,
+      "opponent": "LG",
+      "opponent_code": "LG",
+      "opponent_color": "#C30452",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LG.png",
+      "stadium": "잠실",
+      "score": {
+        "my": 2,
+        "opp": 4,
+        "result": "L"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-21",
+      "time": "17:00",
+      "home": true,
+      "opponent": "LG",
+      "opponent_code": "LG",
+      "opponent_color": "#C30452",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LG.png",
+      "stadium": "잠실",
+      "score": {
+        "my": 3,
+        "opp": 9,
+        "result": "L"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-23",
+      "time": "18:30",
+      "home": false,
+      "opponent": "한화",
+      "opponent_code": "HH",
+      "opponent_color": "#FF6600",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HH.png",
+      "stadium": "대전",
+      "score": {
+        "my": 2,
+        "opp": 3,
+        "result": "L"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-24",
+      "time": "18:30",
+      "home": false,
+      "opponent": "한화",
+      "opponent_code": "HH",
+      "opponent_color": "#FF6600",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HH.png",
+      "stadium": "대전",
+      "score": {
+        "my": 7,
+        "opp": 2,
+        "result": "W"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-25",
+      "time": "18:30",
+      "home": false,
+      "opponent": "한화",
+      "opponent_code": "HH",
+      "opponent_color": "#FF6600",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HH.png",
+      "stadium": "대전",
+      "score": {
+        "my": 5,
+        "opp": 3,
+        "result": "W"
+      },
+      "status": "done",
+      "note": null
+    },
+    {
+      "date": "2026-06-26",
+      "time": "18:30",
+      "home": true,
+      "opponent": "KIA",
+      "opponent_code": "HT",
+      "opponent_color": "#EA0029",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-06-27",
+      "time": "17:00",
+      "home": true,
+      "opponent": "KIA",
+      "opponent_code": "HT",
+      "opponent_color": "#EA0029",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-06-28",
+      "time": "17:00",
+      "home": true,
+      "opponent": "KIA",
+      "opponent_code": "HT",
+      "opponent_color": "#EA0029",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-06-30",
+      "time": "18:30",
+      "home": true,
+      "opponent": "롯데",
+      "opponent_code": "LT",
+      "opponent_color": "#041E42",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LT.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-01",
+      "time": "18:30",
+      "home": true,
+      "opponent": "롯데",
+      "opponent_code": "LT",
+      "opponent_color": "#041E42",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LT.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-02",
+      "time": "18:30",
+      "home": true,
+      "opponent": "롯데",
+      "opponent_code": "LT",
+      "opponent_color": "#041E42",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LT.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-03",
+      "time": "18:30",
+      "home": false,
+      "opponent": "키움",
+      "opponent_code": "WO",
+      "opponent_color": "#570514",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_WO.png",
+      "stadium": "고척",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-04",
+      "time": "18:00",
+      "home": false,
+      "opponent": "키움",
+      "opponent_code": "WO",
+      "opponent_color": "#570514",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_WO.png",
+      "stadium": "고척",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-05",
+      "time": "14:00",
+      "home": false,
+      "opponent": "키움",
+      "opponent_code": "WO",
+      "opponent_color": "#570514",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_WO.png",
+      "stadium": "고척",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-07",
+      "time": "18:30",
+      "home": true,
+      "opponent": "SSG",
+      "opponent_code": "SK",
+      "opponent_color": "#CE0E2D",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_SK.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-08",
+      "time": "18:30",
+      "home": true,
+      "opponent": "SSG",
+      "opponent_code": "SK",
+      "opponent_color": "#CE0E2D",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_SK.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-09",
+      "time": "18:30",
+      "home": true,
+      "opponent": "SSG",
+      "opponent_code": "SK",
+      "opponent_color": "#CE0E2D",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_SK.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-16",
+      "time": "18:30",
+      "home": false,
+      "opponent": "NC",
+      "opponent_code": "NC",
+      "opponent_color": "#315288",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_NC.png",
+      "stadium": "창원",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-17",
+      "time": "18:00",
+      "home": false,
+      "opponent": "NC",
+      "opponent_code": "NC",
+      "opponent_color": "#315288",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_NC.png",
+      "stadium": "창원",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-18",
+      "time": "18:00",
+      "home": false,
+      "opponent": "NC",
+      "opponent_code": "NC",
+      "opponent_color": "#315288",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_NC.png",
+      "stadium": "창원",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-19",
+      "time": "18:00",
+      "home": false,
+      "opponent": "NC",
+      "opponent_code": "NC",
+      "opponent_color": "#315288",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_NC.png",
+      "stadium": "창원",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-21",
+      "time": "18:30",
+      "home": false,
+      "opponent": "KT",
+      "opponent_code": "KT",
+      "opponent_color": "#000000",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_KT.png",
+      "stadium": "수원",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-22",
+      "time": "18:30",
+      "home": false,
+      "opponent": "KT",
+      "opponent_code": "KT",
+      "opponent_color": "#000000",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_KT.png",
+      "stadium": "수원",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-23",
+      "time": "18:30",
+      "home": false,
+      "opponent": "KT",
+      "opponent_code": "KT",
+      "opponent_color": "#000000",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_KT.png",
+      "stadium": "수원",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-24",
+      "time": "18:30",
+      "home": true,
+      "opponent": "삼성",
+      "opponent_code": "SS",
+      "opponent_color": "#1428A0",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_SS.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-25",
+      "time": "18:00",
+      "home": true,
+      "opponent": "삼성",
+      "opponent_code": "SS",
+      "opponent_color": "#1428A0",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_SS.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-26",
+      "time": "18:00",
+      "home": true,
+      "opponent": "삼성",
+      "opponent_code": "SS",
+      "opponent_color": "#1428A0",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_SS.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-28",
+      "time": "18:30",
+      "home": false,
+      "opponent": "SSG",
+      "opponent_code": "SK",
+      "opponent_color": "#CE0E2D",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_SK.png",
+      "stadium": "문학",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-29",
+      "time": "18:30",
+      "home": false,
+      "opponent": "SSG",
+      "opponent_code": "SK",
+      "opponent_color": "#CE0E2D",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_SK.png",
+      "stadium": "문학",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-30",
+      "time": "18:30",
+      "home": false,
+      "opponent": "SSG",
+      "opponent_code": "SK",
+      "opponent_color": "#CE0E2D",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_SK.png",
+      "stadium": "문학",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    },
+    {
+      "date": "2026-07-31",
+      "time": "18:30",
+      "home": true,
+      "opponent": "LG",
+      "opponent_code": "LG",
+      "opponent_color": "#C30452",
+      "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LG.png",
+      "stadium": "잠실",
+      "score": null,
+      "status": "scheduled",
+      "note": null
+    }
+  ]
+}
