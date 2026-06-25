@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 460px;
+    background: transparent;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  }
+  #calendar-wrap {
+    width: 100%;
+    background: rgba(8, 8, 24, 0.72);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 20px 20px 16px 20px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+  }
+  #cal-header { display:flex; align-items:baseline; gap:10px; margin-bottom:12px; }
+  #cal-month { font-size:28px; font-weight:700; color:#fff; letter-spacing:0.02em; text-shadow:0 2px 12px rgba(0,0,0,0.7); }
+  #cal-year { font-size:13px; color:rgba(255,255,255,0.55); letter-spacing:0.08em; }
+  .dow-row { display:grid; grid-template-columns:repeat(7,1fr); margin-bottom:4px; }
+  .dow-cell { text-align:center; font-size:10px; font-weight:600; letter-spacing:0.1em; color:rgba(255,255,255,0.55); padding:4px 0; }
+  .dow-cell.sun { color:rgba(255,90,90,0.6); }
+  .dow-cell.sat { color:rgba(100,160,255,0.6); }
+  #cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:3px; }
+  .day-cell { aspect-ratio:1/1.15; border-radius:6px; position:relative; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; padding-top:6px; background:transparent; }
+  .day-cell.empty { background:transparent; }
+  .day-cell.has-game { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.09); }
+  .day-cell.home { background:rgba(255,255,255,0.88); border:1px solid rgba(255,255,255,0.95); }
+  .day-cell.away { background:rgba(19,18,48,0.65); border:1px solid rgba(255,255,255,0.12); }
+  .day-cell.today { outline:2px solid rgba(255,255,255,0.7); outline-offset:-2px; }
+  .day-cell.today .day-num { color:#fff; font-weight:800; }
+  .day-num { font-size:11px; font-weight:500; color:rgba(255,255,255,0.6); line-height:1; }
+  .day-cell.sun .day-num { color:rgba(255,100,100,0.7); }
+  .day-cell.sat .day-num { color:rgba(100,160,255,0.7); }
+  .day-cell.has-game .day-num, .day-cell.away .day-num { color:rgba(255,255,255,0.9); }
+  .day-cell.home .day-num { color:rgba(20,20,50,0.85); }
+  .emblem-wrap { flex:1; display:flex; align-items:center; justify-content:center; width:100%; }
+  .emblem-wrap img { width:72%; max-width:34px; object-fit:contain; filter:drop-shadow(0 1px 4px rgba(0,0,0,0.3)); opacity:0.95; }
+  .day-cell.away .emblem-wrap img { opacity:0.6; filter:drop-shadow(0 1px 4px rgba(0,0,0,0.5)) grayscale(0.2); }
+  .day-cell.cancelled .emblem-wrap img { opacity:0.2; filter:grayscale(1); }
+  .game-time { font-size:8.5px; color:rgba(255,255,255,0.45); margin-bottom:4px; letter-spacing:0.03em; }
+  .day-cell.home .game-time { color:rgba(20,20,50,0.6); }
+  .result-badge { position:absolute; top:4px; right:5px; font-size:8px; font-weight:700; border-radius:3px; padding:1px 3px; letter-spacing:0.05em; }
+  .result-W { background:rgba(50,200,100,0.25); color:#6de99a; }
+  .result-L { background:rgba(220,60,60,0.2); color:#f07070; }
+  .result-D { background:rgba(180,180,180,0.2); color:#c0c0c0; }
+  .home-dot { position:absolute; bottom:4px; left:50%; transform:translateX(-50%); width:4px; height:4px; border-radius:50%; background:rgba(255,255,255,0.5); }
+  .day-cell.home .home-dot { background:rgba(19,18,48,0.5); }
+  #legend { display:flex; gap:14px; margin-top:10px; }
+  .legend-item { display:flex; align-items:center; gap:5px; font-size:9.5px; color:rgba(255,255,255,0.35); letter-spacing:0.05em; }
+  .legend-dot { width:6px; height:6px; border-radius:50%; }
+  .legend-dot.home { background:rgba(255,255,255,0.88); border:1px solid rgba(255,255,255,0.5); }
+  .legend-dot.away { background:rgba(19,18,48,0.65); border:1px solid rgba(255,255,255,0.3); }
+  #updated-at { margin-top:8px; font-size:9px; color:rgba(255,255,255,0.2); letter-spacing:0.05em; }
+</style>
+</head>
+<body>
+<div id="calendar-wrap">
+  <div id="cal-header">
+    <span id="cal-month">JUNE</span>
+    <span id="cal-year">2026</span>
+  </div>
+  <div class="dow-row">
+    <div class="dow-cell sun">SUN</div>
+    <div class="dow-cell">MON</div>
+    <div class="dow-cell">TUE</div>
+    <div class="dow-cell">WED</div>
+    <div class="dow-cell">THU</div>
+    <div class="dow-cell">FRI</div>
+    <div class="dow-cell sat">SAT</div>
+  </div>
+  <div id="cal-grid">
+<div class="day-cell empty"></div>
+<div class="day-cell"><div class="day-num">1</div></div>
+<div class="day-cell home"><div class="day-num">2</div><div class="result-badge result-W">W</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HH.png" alt="한화">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell home"><div class="day-num">3</div><div class="result-badge result-D">D</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HH.png" alt="한화">
+                </div>
+                <div class="game-time">17:00</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell home"><div class="day-num">4</div><div class="result-badge result-W">W</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HH.png" alt="한화">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell home"><div class="day-num">5</div><div class="result-badge result-W">W</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_WO.png" alt="키움">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell sat home"><div class="day-num">6</div><div class="result-badge result-W">W</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_WO.png" alt="키움">
+                </div>
+                <div class="game-time">17:00</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell sun home"><div class="day-num">7</div><div class="result-badge result-L">L</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_WO.png" alt="키움">
+                </div>
+                <div class="game-time">17:00</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell"><div class="day-num">8</div></div>
+<div class="day-cell away"><div class="day-num">9</div><div class="result-badge result-W">W</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LT.png" alt="롯데">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell away"><div class="day-num">10</div><div class="result-badge result-L">L</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LT.png" alt="롯데">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell away"><div class="day-num">11</div><div class="result-badge result-W">W</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LT.png" alt="롯데">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell away"><div class="day-num">12</div><div class="result-badge result-W">W</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png" alt="KIA">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell sat away"><div class="day-num">13</div><div class="result-badge result-L">L</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png" alt="KIA">
+                </div>
+                <div class="game-time">17:00</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell sun away"><div class="day-num">14</div><div class="result-badge result-W">W</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png" alt="KIA">
+                </div>
+                <div class="game-time">17:00</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell"><div class="day-num">15</div></div>
+<div class="day-cell home"><div class="day-num">16</div><div class="result-badge result-L">L</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_KT.png" alt="KT">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell home"><div class="day-num">17</div><div class="result-badge result-L">L</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_KT.png" alt="KT">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell home"><div class="day-num">18</div><div class="result-badge result-W">W</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_KT.png" alt="KT">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell home"><div class="day-num">19</div><div class="result-badge result-L">L</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LG.png" alt="LG">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell sat home"><div class="day-num">20</div><div class="result-badge result-L">L</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LG.png" alt="LG">
+                </div>
+                <div class="game-time">17:00</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell sun home"><div class="day-num">21</div><div class="result-badge result-L">L</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LG.png" alt="LG">
+                </div>
+                <div class="game-time">17:00</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell"><div class="day-num">22</div></div>
+<div class="day-cell away"><div class="day-num">23</div><div class="result-badge result-L">L</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HH.png" alt="한화">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell away"><div class="day-num">24</div><div class="result-badge result-W">W</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HH.png" alt="한화">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell away"><div class="day-num">25</div><div class="result-badge result-W">W</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HH.png" alt="한화">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell today home"><div class="day-num">26</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png" alt="KIA">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell sat home"><div class="day-num">27</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png" alt="KIA">
+                </div>
+                <div class="game-time">17:00</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell sun home"><div class="day-num">28</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png" alt="KIA">
+                </div>
+                <div class="game-time">17:00</div>
+                <div class="home-dot"></div></div>
+<div class="day-cell"><div class="day-num">29</div></div>
+<div class="day-cell home"><div class="day-num">30</div>
+                <div class="emblem-wrap">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_LT.png" alt="롯데">
+                </div>
+                <div class="game-time">18:30</div>
+                <div class="home-dot"></div></div>
+  </div>
+  <div id="legend">
+    <div class="legend-item"><div class="legend-dot home"></div>홈</div>
+    <div class="legend-item"><div class="legend-dot away"></div>어웨이</div>
+  </div>
+  <div id="updated-at">UPDATED 2026.06.26</div>
+</div>
+</body>
+</html>
