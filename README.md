@@ -5,7 +5,7 @@ GitHub Pages로 서빙되는 두산 베어스 경기 일정 JSON API.
 ## 엔드포인트
 
 ```
-https://{username}.github.io/{repo}/schedule.json
+https://MarielaParis.github.io/Doosan-Schedule/schedule.json
 ```
 
 ## 갱신 주기
