@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T02:47:08",
+  "updated": "2026-06-28T16:02:17",
   "team": "두산 베어스",
   "games": [
     {
@@ -368,8 +368,12 @@
       "opponent_color": "#EA0029",
       "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png",
       "stadium": "잠실",
-      "score": null,
-      "status": "scheduled",
+      "score": {
+        "my": 3,
+        "opp": 2,
+        "result": "W"
+      },
+      "status": "done",
       "note": null
     },
     {
@@ -381,8 +385,12 @@
       "opponent_color": "#EA0029",
       "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png",
       "stadium": "잠실",
-      "score": null,
-      "status": "scheduled",
+      "score": {
+        "my": 8,
+        "opp": 1,
+        "result": "W"
+      },
+      "status": "done",
       "note": null
     },
     {
@@ -394,8 +402,12 @@
       "opponent_color": "#EA0029",
       "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_HT.png",
       "stadium": "잠실",
-      "score": null,
-      "status": "scheduled",
+      "score": {
+        "my": 1,
+        "opp": 12,
+        "result": "L"
+      },
+      "status": "done",
       "note": null
     },
     {
