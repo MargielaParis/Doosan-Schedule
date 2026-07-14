@@ -16,7 +16,7 @@ TEAM_COLOR = {
     "LG":  "#C30452", "한화": "#FF6600", "SSG": "#CE0E2D",
     "삼성": "#1428A0", "NC":  "#315288", "KT":  "#000000",
     "롯데": "#041E42", "KIA": "#EA0029", "두산": "#131230",
-    "키움": "#570514"
+    "키움": "#570514",
 }
 
 EMBLEM_URL = "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_{code}.png"
