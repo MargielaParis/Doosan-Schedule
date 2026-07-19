@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T15:49:14",
+  "updated": "2026-07-19T15:45:08",
   "team": "두산 베어스",
   "games": [
     {
@@ -147,8 +147,12 @@
       "opponent_color": "#315288",
       "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_NC.png",
       "stadium": "창원",
-      "score": null,
-      "status": "scheduled",
+      "score": {
+        "my": 2,
+        "opp": 4,
+        "result": "L"
+      },
+      "status": "done",
       "note": null
     },
     {
@@ -160,8 +164,12 @@
       "opponent_color": "#315288",
       "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_NC.png",
       "stadium": "창원",
-      "score": null,
-      "status": "scheduled",
+      "score": {
+        "my": 4,
+        "opp": 2,
+        "result": "W"
+      },
+      "status": "done",
       "note": null
     },
     {
@@ -173,8 +181,12 @@
       "opponent_color": "#315288",
       "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_NC.png",
       "stadium": "창원",
-      "score": null,
-      "status": "scheduled",
+      "score": {
+        "my": 12,
+        "opp": 9,
+        "result": "W"
+      },
+      "status": "done",
       "note": null
     },
     {
@@ -186,8 +198,12 @@
       "opponent_color": "#315288",
       "emblem_url": "https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/emblem/regular/2026/initial_NC.png",
       "stadium": "창원",
-      "score": null,
-      "status": "scheduled",
+      "score": {
+        "my": 10,
+        "opp": 3,
+        "result": "W"
+      },
+      "status": "done",
       "note": null
     },
     {
